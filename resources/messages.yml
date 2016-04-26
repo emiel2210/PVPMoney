@@ -3,7 +3,7 @@ eng: true
 eng-default-prefix: "§e[§aPVPMoney§e]§b"
 eng-commands-pvpmoney: "killcash"
 eng-pvpmoney-is-it changed: "Kill reward has been set!"
-eng-pvpmoney-paid: "§r§b+%price% added to your balance!"
+eng-pvpmoney-paid: "§o§r§b+%price% added to your balance!"
 eng-help-pvpmoney: "/killhelp"
 eng-there-is-no-economyapi: "Dude, atleast load the Economy plugin in."
 ...

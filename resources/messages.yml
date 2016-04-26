@@ -1,26 +1,9 @@
-# IF YOU NEED A SOME OTHER LANGUAGE SETTINGS #
-# YOU SHOULD MODIFY THIS MESSAGE.YML FILE -! #
-
-#PLEASE SET HERE TO YOUR LANGUAGE PREFIX
-m_version: 3
-
-#(EN) ENGLISH
+---
 eng: true
-eng-default-prefix: "[ PVPMoney ]"
-eng-commands-pvpmoney: "pvpmoney"
-eng-pvpmoney-is-it changed: "PVP PRICE has been set!"
-eng-pvpmoney-paid: "%price% received dollar!"
-eng-help-pvpmoney: "/pvpmoney"
-eng-there-is-no-economyapi: "There is no EconomyAPI! Plugin has been disabled!"
-
-#(KO) KOREAN
-kor: true
-kor-default-prefix: "[ 서버 ]"
-kor-commands-pvpmoney: "pvpmoney"
-kor-help-pvpmoney: "/pvpmoney <금액> - 유저를 살해시 그만큼 돈을 줍니다"
-kor-pvpmoney-is-changed: "PVP 금액이 설정되었습니다 !"
-kor-pvpmoney-paid: "%price% 달러를 받았습니다 !"
-kor-there-is-no-economyapi: "이코노미 API가 없습니다 ! 작동불가"
-
-# AND YOU CAN PROVIDE YOUR TRANSLATION       #
-# https://github.com/if-Team/PMMP-Plugins/blob/master/examplePlugin/resources/messages.yml
+eng-default-prefix: "§e[§aPVPMoney§e]§b"
+eng-commands-pvpmoney: "killcash"
+eng-pvpmoney-is-it changed: "Kill reward has been set!"
+eng-pvpmoney-paid: "§r§b+%price% added to your balance!"
+eng-help-pvpmoney: "/killhelp"
+eng-there-is-no-economyapi: "Dude, atleast load the Economy plugin in."
+...

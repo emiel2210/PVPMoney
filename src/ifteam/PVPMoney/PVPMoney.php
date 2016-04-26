@@ -57,7 +57,7 @@ class PVPMoney extends PluginBase implements Listener {
 			$damager = $this->getServer ()->getPlayerExact ( $this->attackQueue [$event->getEntity ()->getName ()] );
 			if (! $damager instanceof Player) return;
 			
-			$amount = $this->db ["payback"];
+			$amount = $this->db ["rewardamount"];
 			$this->economyAPI->addMoney ( $damager, $amount );
 			
 			$message = str_replace ( "%price%", $amount, $this->get ( "pvpmoney-paid" ) );
@@ -70,10 +70,8 @@ class PVPMoney extends PluginBase implements Listener {
 		switch (strtolower ( $command->getName () )) {
 			case $this->get ( "commands-pvpmoney" ) :
 				if (! isset ( $args [0] ) or is_numeric ( $args [0] )) {
-					$this->alert ( $player, $this->get ( "help-pvpmoney" ) );
 					return true;
-					$this->db ["payback"] = $args [0];
-					$this->message ( $player, $this->get ( "pvpmoney-is-changed" ) );
+					$this->db ["rewardamount"] = $args [0];
 				}
 				break;
 		}
